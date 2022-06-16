@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IMC Calculator</title>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="result">
+        <div class="result_img">
+          <img id="img" src="src/img1.png " alt="person reaction" />
+        </div>
+        <div class="result_datas">
+          <h2 id="result_title" class="result_title">Insuffisance pondérale (maigreur)</h2>
+          <h4 id="result_value" class="result_value">0</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <form id="form">
+        <div class="form_group">
+          <div class="form_control">
+            <input id="centimeter" type="number" class="form_input" placeholder="" required />
+            <label for="centimeter" class="form_label">cm</label>
+          </div>
+          <div class="form_control">
+            <input id="kilograms" type="number" class="form_input" placeholder="" required />
+            <label for="kilograms" class="form_label">kg</label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Calculer</button>
+      </form>
+    </section>
+  </body>
+</html>
